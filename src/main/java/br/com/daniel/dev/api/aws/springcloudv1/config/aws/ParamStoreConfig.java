@@ -1,2 +1,17 @@
-package br.com.daniel.dev.api.aws.springcloudv1.config.aws;public class ParamStoreConfig {
+package br.com.daniel.dev.api.aws.springcloudv1.config.aws;
+
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableConfigurationProperties
+@Getter
+@Setter
+public class ParamStoreConfig {
+
+    @Value("${helloWorld}")
+    private String paramStoreHelloWord;
 }

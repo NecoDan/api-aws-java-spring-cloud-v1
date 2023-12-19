@@ -1,1 +1,23 @@
-
+spring:
+  application:
+    name: spring-boot-localstack
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+aws:
+  paramstore:
+    enabled: true
+---
+spring:
+  config:
+    activate:
+      on-profile: localstack
+aws:
+  paramstore:
+    enabled: true
+    endpoint: http://localhost:4566
+  secretsmanager:
+    enabled: false
+    endpoint: http://localhost:4566
