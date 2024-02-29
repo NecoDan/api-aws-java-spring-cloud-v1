@@ -1,3 +1,0 @@
--- -- inserindo valores tabela produto
--- INSERT INTO product (id, name, code, quantity, price)
--- VALUES ("Ventilador de Mesa ou Parede 2x1 Arno 6 Pás 40cm Turbo Force Preto VF42",  75065, 100, 250.00);

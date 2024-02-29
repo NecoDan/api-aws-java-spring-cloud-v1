@@ -13,12 +13,8 @@ import java.util.random.RandomGenerator;
 @RequiredArgsConstructor
 public class ProductEntityRepository implements ProductEntityPort {
 
-    // private final ProductRepository productRepository;
-
     @Override
     public Optional<ProductEntity> getById(final long id) {
-        // return this.productRepository.findById(id);
-
         return Optional.ofNullable(ProductEntity.builder()
                 .id(getIdGenerate(id))
                 .name(getProductName())
