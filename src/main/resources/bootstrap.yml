@@ -14,6 +14,33 @@ spring:
   config:
     activate:
       on-profile: localstack
+#  datasource:
+#    url: jdbc:h2:file:~/test
+#    username: sa
+#    password: sa
+#    driver-class-name: org.h2.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.H2Dialect
+#        format_sql: true
+#    defer-datasource-initialization: true
+#    generate-ddl: true
+  cache:
+    type: redis
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    connect-timeout: 6000
+    password: Redis2024!
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
 aws:
   paramstore:
     enabled: true
@@ -21,3 +48,24 @@ aws:
   secretsmanager:
     enabled: false
     endpoint: http://localhost:4566
+---
+#spring:
+#  config:
+#    activate:
+#      on-profile: h2-memory
+#  datasource:
+#    url: jdbc:h2:mem:mydb
+#    username: sa
+#    password: sa
+#    driver-class-name: org.h2.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.H2Dialect
+#aws:
+#  paramstore:
+#    enabled: true
+#    endpoint: http://localhost:4566
+#  secretsmanager:
+#    enabled: false
+#    endpoint: http://localhost:4566

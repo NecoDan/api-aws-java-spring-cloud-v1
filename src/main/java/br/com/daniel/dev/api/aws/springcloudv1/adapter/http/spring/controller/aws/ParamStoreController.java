@@ -1,4 +1,4 @@
-package br.com.daniel.dev.api.aws.springcloudv1.adapter.http.spring.controller;
+package br.com.daniel.dev.api.aws.springcloudv1.adapter.http.spring.controller.aws;
 
 import br.com.daniel.dev.api.aws.springcloudv1.config.aws.ParamStoreConfig;
 import lombok.RequiredArgsConstructor;

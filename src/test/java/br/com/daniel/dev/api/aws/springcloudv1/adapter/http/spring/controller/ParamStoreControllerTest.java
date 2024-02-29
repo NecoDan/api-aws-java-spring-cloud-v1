@@ -1,5 +1,6 @@
 package br.com.daniel.dev.api.aws.springcloudv1.adapter.http.spring.controller;
 
+import br.com.daniel.dev.api.aws.springcloudv1.adapter.http.spring.controller.aws.ParamStoreController;
 import br.com.daniel.dev.api.aws.springcloudv1.config.aws.ParamStoreConfig;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
