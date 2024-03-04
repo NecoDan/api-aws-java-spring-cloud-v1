@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/aws/v1")
+@RequestMapping("/paramstore")
 @RequiredArgsConstructor
 public class ParamStoreController {
 
     private final ParamStoreConfig paramStoreConfig;
 
-    @GetMapping("/paramstore_configuration")
-    public String getParamStoreConfigurarion() {
+    @GetMapping("/v1/configuration")
+    public String getParamStoreConfiguration() {
         return paramStoreConfig.getParamStoreHelloWord();
     }
 }
