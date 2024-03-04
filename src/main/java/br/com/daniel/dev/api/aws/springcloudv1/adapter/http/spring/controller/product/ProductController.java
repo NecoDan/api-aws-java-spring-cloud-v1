@@ -20,7 +20,7 @@ import java.util.Random;
 import java.util.random.RandomGenerator;
 
 @RestController
-@RequestMapping("/aws/v1/products")
+@RequestMapping("/products")
 @RequiredArgsConstructor
 @CacheConfig(cacheNames = "product")
 public class ProductController {
@@ -28,7 +28,7 @@ public class ProductController {
     private final ProductPort productPort;
     private final ProductMapper productMapper;
 
-    @GetMapping("{id}")
+    @GetMapping("/v1/{id}")
     @Cacheable(value = "product", key = "#id")
     public ProductDto getProductById(@PathVariable Long id) {
         return productMapper.toProductDto(
