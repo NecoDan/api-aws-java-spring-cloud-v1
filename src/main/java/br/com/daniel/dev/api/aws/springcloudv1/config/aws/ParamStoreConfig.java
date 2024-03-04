@@ -12,6 +12,6 @@ import org.springframework.context.annotation.Configuration;
 @Setter
 public class ParamStoreConfig {
 
-    @Value("${helloWorld}")
+//    @Value("${helloWorld}")
     private String paramStoreHelloWord;
 }

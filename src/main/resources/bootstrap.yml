@@ -24,8 +24,8 @@ spring:
     password: Redis2024!
 aws:
   paramstore:
-    enabled: true
+    enabled: false
     endpoint: http://localhost:4566
   secretsmanager:
-    enabled: false
+    enabled: true
     endpoint: http://localhost:4566

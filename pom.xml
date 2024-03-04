@@ -104,14 +104,17 @@
         </dependency>
 
         <!-- AWS -->
+        <!-- AWS - General -->
         <dependency>
             <groupId>io.awspring.cloud</groupId>
             <artifactId>spring-cloud-starter-aws</artifactId>
         </dependency>
+        <!-- AWS - Parameter Store -->
         <dependency>
             <groupId>io.awspring.cloud</groupId>
             <artifactId>spring-cloud-starter-aws-parameter-store-config</artifactId>
         </dependency>
+        <!-- AWS - SecretsManager -->
         <dependency>
             <groupId>io.awspring.cloud</groupId>
             <artifactId>spring-cloud-starter-aws-secrets-manager-config</artifactId>
